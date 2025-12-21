@@ -103,3 +103,14 @@ header .subtitle{
     justify-content: center;
     gap: 10px;
 }
+
+.btn-submit{
+    background: linear-gradient(135deg, #00ff26 0%, #0008ff 100%);
+    color: white;
+}
+
+.btn-reset{
+    background: #777879;
+    color: #ffffff;
+    border: 2px solid #e0e0e0;
+}
