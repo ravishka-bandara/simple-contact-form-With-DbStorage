@@ -46,3 +46,15 @@ header .subtitle{
     padding: 40px;
 }
 
+/* form groups*/
+.form-group{
+    margin-bottom: 25px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+    font-size: 1.1rem;
+}
