@@ -127,3 +127,22 @@ header .subtitle{
     color: rgb(255, 255, 255);
 }
 
+/* == links*/
+.form-links{
+    margin-top: 40px;
+    align-items: center;
+    padding-top: 30px;
+    border-top: 2px dashed #eee;
+}
+
+.link-btn{
+    display: inline-block;
+    padding: 12px 30px;
+    background: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
