@@ -63,3 +63,22 @@ header .subtitle{
     margin-right: 10px;
     color: #9215cc;
 }
+
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e00e;
+    border-radius: 20px;
+    font-size: 1rem;
+    transition: all 0.3s;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    border-color: #ff0000;
+    outline: none;
+    box-shadow: 0 0 0 3px rgb(151, 31, 7);
+}
+
