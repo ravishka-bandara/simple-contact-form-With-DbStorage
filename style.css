@@ -156,3 +156,8 @@ header .subtitle{
     margin-right: 8px;
 }
 
+.note{
+    margin-top: 15px;
+    color: #666;
+    font-style: italic;
+}
