@@ -41,3 +41,8 @@ header .subtitle{
     opacity: 0.9;
 }
 
+/* =form container==*/
+.form-container{
+    padding: 40px;
+}
+
