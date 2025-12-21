@@ -114,3 +114,16 @@ header .subtitle{
     color: #ffffff;
     border: 2px solid #e0e0e0;
 }
+
+.btn-submit:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 7px 15px rgba(106, 17, 203, 0.3);
+    background: rgb(0, 140, 255);
+    color: white;
+}
+
+.btn-reset:hover{
+    background: #ff0000;
+    color: rgb(255, 255, 255);
+}
+
