@@ -190,3 +190,30 @@ header .subtitle{
     align-items: center;
     gap: 8px;
 }
+
+
+.tech-icon.html{
+    background: #00ff26;
+    color: #0026ff;
+}
+
+.tech-icon.css{
+    background: #00ff26;
+    color: #0008ff;
+}
+
+.tech-icon.js{
+    background: #00ff26;
+    color: #0008ff;
+}
+
+.tech-icon.php{
+    background: #00ff26;
+    color: #0008ff;
+}
+
+.tech-icon.mysql{
+    background: #00ff26;
+    color: #0008ff;
+}
+
