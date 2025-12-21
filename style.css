@@ -55,6 +55,11 @@ header .subtitle{
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
-    color: #333;
+    color: #3d3838;
     font-size: 1.1rem;
+}
+
+.form-group label i{
+    margin-right: 10px;
+    color: #9215cc;
 }
