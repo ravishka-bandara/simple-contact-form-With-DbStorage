@@ -161,3 +161,32 @@ header .subtitle{
     color: #666;
     font-style: italic;
 }
+
+/*===tech stach section==== */
+.tech-stack{
+    background: #f8f9fa;
+    padding: 25px;
+    border-top: 2px solid #eee;
+}
+
+.tech-stack h3{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.tech-icons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.tech-icon{
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
