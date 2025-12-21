@@ -138,11 +138,21 @@ header .subtitle{
 .link-btn{
     display: inline-block;
     padding: 12px 30px;
-    background: #28a745;
+    background: #0026ff;
     color: white;
     text-decoration: none;
     border-radius: 20px;
     font-weight: 600;
     transition: all 0.3s;
+}
+
+.link-btn:hover{
+    background: #61eaff;
+    color: black;
+    transform: translateY(-2px);
+}
+
+.link-btn i{
+    margin-right: 8px;
 }
 
