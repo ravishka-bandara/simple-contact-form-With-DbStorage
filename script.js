@@ -60,5 +60,12 @@ document.addEventListener('DOMContentLoaded',function(){
         }
     });
 
-    
+    // Error display function
+    function showError(fieldId, message){
+        const field = document.getElementById(fieldId);
+        const formGroup = field.closest('.form-group');
+
+        //error element
+        
+    }
 })
