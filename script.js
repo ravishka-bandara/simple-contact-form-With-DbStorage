@@ -93,5 +93,37 @@ document.addEventListener('DOMContentLoaded',function(){
         });
     }
 
-    
+    // notification system
+    function showNotification(message, type){
+        //remove current notification
+        const existing = document.querySelector('.notification');
+        if(existing) existing.remove();
+
+        //create notification
+        const notification = document.createElement('div');
+        notification.className = `notification ${type}`;
+        notification.innerHTML = `
+        <i class="fas fa-${type === 'error' ? 'exclamation-circle' : 'check-circle'}"></i>
+        <span>${message}</span>
+        <button onClick="this.parentElement.remove()">&times;</button>`;
+
+        //style notification
+        notification.style.cssText=`
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 15px 20px;
+        border-radius: 10px;
+        background: ${type === 'error' ? '#dc3545' : '#28a745'};
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        z-index: 1000;
+        animation: slideIn 0.3s;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);`;
+
+
+        
+    } 
 })
