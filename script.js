@@ -74,5 +74,7 @@ document.addEventListener('DOMContentLoaded',function(){
         errorDiv.style.fontSize = '0.9rem';
 
         //addd to form group
+        formGroup.appendChild(errorDiv);
+        
     }
 })
