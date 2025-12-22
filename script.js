@@ -66,6 +66,13 @@ document.addEventListener('DOMContentLoaded',function(){
         const formGroup = field.closest('.form-group');
 
         //error element
-        
+        const errorDiv = document.createElement('div');
+        errorDiv.className = 'error-message';
+        errorDiv.innerHTML = `<i class="fas fa-exclamation-circle"></i> ${message}`;
+        errorDiv.style.color = '#dc3545';
+        errorDiv.style.marginTop = '5px';
+        errorDiv.style.fontSize = '0.9rem';
+
+        //addd to form group
     }
 })
