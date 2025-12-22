@@ -124,6 +124,16 @@ document.addEventListener('DOMContentLoaded',function(){
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);`;
 
 
-        
+        //add to page
+        document.body.appendChild(notification);
+
+        //auto remove after 5seconds
+        setTimeout(() =>{
+            if(notification.parentElement){
+                notification.remove();
+            }
+        }, 5000);
     } 
+
+    
 })
