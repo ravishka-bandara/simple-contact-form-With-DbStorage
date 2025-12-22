@@ -82,5 +82,16 @@ document.addEventListener('DOMContentLoaded',function(){
     }
 
 
+    //clear errors 
+    function clearErrors(){
+        document.querySelectorAll('.error-message').forEach(el => el.remove());
+
+        //reset field styles
+        document.querySelectorAll('input, textarea').forEach(field=>{
+            field.style.borderColor = '#e0e0e0';
+            field.style.backgroundColor = '#ffffffff';
+        });
+    }
+
     
 })
