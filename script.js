@@ -23,5 +23,42 @@ document.addEventListener('DOMContentLoaded',function(){
         e.target.value = value;
     });
 
+    // form validation before submition
+    form.addEventListener('submit',function(e){
+        let isValid = true;
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        //clear errors
+        clearErrors();
+
+        // name validatoion
+        if (name.length < 2){
+            showError('name', 'Name must be at least 2 characters');
+            isValid = false;
+        }
+
+        //email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if(!emailRegex.test(email)){
+            showError('email','please enter a valid email address');
+            isValid = false;
+        }
+
+        //message validation
+        if(message.length < 10){
+            showError('message','message must be at least 10 characters');
+            isValid = false;
+        }
+
+        if(!isValid){
+            e.preventDefault();
+            showNotification('please fix the errors in the form', 'error');
+        } else{
+            showNotification('Submitting form...', 'success');
+        }
+    });
+
     
 })
