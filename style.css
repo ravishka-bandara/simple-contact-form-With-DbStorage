@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, rgba(255, 0, 0, 0.933) 0%, #059905 100%);
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* headerr section*/
+header{
+    background: linear-gradient(135deg, #1000a0 0%, #0bfbeb 100%);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+header h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header .subtitle{
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* =form container==*/
+.form-container{
+    padding: 40px;
+}
+
+/* form groups*/
+.form-group{
+    margin-bottom: 25px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #3d3838;
+    font-size: 1.1rem;
+}
+
+.form-group label i{
+    margin-right: 10px;
+    color: #9215cc;
+}
+
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e00e;
+    border-radius: 20px;
+    font-size: 1rem;
+    transition: all 0.3s;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    border-color: #ff0000;
+    outline: none;
+    box-shadow: 0 0 0 3px rgb(151, 31, 7);
+}
+
+/*== buttons=*/
+.form-actions{
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn-submit, .btn-reset{
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-submit{
+    background: linear-gradient(135deg, #00ff26 0%, #0008ff 100%);
+    color: white;
+}
+
+.btn-reset{
+    background: #777879;
+    color: #ffffff;
+    border: 2px solid #e0e0e0;
+}
+
+.btn-submit:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 7px 15px rgba(106, 17, 203, 0.3);
+    background: rgb(0, 140, 255);
+    color: white;
+}
+
+.btn-reset:hover{
+    background: #ff0000;
+    color: rgb(255, 255, 255);
+}
+
+/* == links*/
+.form-links{
+    margin-top: 40px;
+    align-items: center;
+    padding-top: 30px;
+    border-top: 2px dashed #eee;
+}
+
+.link-btn{
+    display: inline-block;
+    padding: 12px 30px;
+    background: #0026ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.link-btn:hover{
+    background: #61eaff;
+    color: black;
+    transform: translateY(-2px);
+}
+
+.link-btn i{
+    margin-right: 8px;
+}
+
+.note{
+    margin-top: 15px;
+    color: #666;
+    font-style: italic;
+}
+
+/*===tech stach section==== */
+.tech-stack{
+    background: #f8f9fa;
+    padding: 25px;
+    border-top: 2px solid #eee;
+}
+
+.tech-stack h3{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.tech-icons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.tech-icon{
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.tech-icon.html{
+    background: #00ff26;
+    color: #0026ff;
+}
+
+.tech-icon.css{
+    background: #00ff26;
+    color: #0008ff;
+}
+
+.tech-icon.js{
+    background: #00ff26;
+    color: #0008ff;
+}
+
+.tech-icon.php{
+    background: #00ff26;
+    color: #0008ff;
+}
+
+.tech-icon.mysql{
+    background: #00ff26;
+    color: #0008ff;
+}
+
+
+
+/*======== make responsive for samll screens==*/
+
+@media (max-width: 600px){
+    .container{
+        margin: 50px;
+        border-radius: 25px;
+    }
+
+    .form-container{
+        padding: 25px;
+    }
+
+    .form-actions{
+        flex-direction: column;
+    }
+
+    .tech-icons{
+        flex-direction: column;
+        align-items: center;
+    }
+}
