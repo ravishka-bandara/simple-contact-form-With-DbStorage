@@ -75,6 +75,12 @@ document.addEventListener('DOMContentLoaded',function(){
 
         //addd to form group
         formGroup.appendChild(errorDiv);
-        
+
+        // highlight field
+        field.style.borderColor = '#dc3545';
+        field.style.backgroundColor = '#fff8f8';
     }
+
+
+    
 })
