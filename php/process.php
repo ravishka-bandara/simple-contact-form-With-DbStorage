@@ -38,6 +38,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
             $stmt = $pdo->prepare($sql);
 
+            // binding parameeters
+            $stmt->bindParam(':name',$name);
+            $stmt->bindParam(':email',$email);
+            $stmt->bindParam(':phone',$phone);
+            $stmt->bindParam(':message',$message);
+
             
         }
     }
