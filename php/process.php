@@ -59,5 +59,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         $_SESSION['error'] = $errors;
     }
 
+    //redirect back to form
+    header("location: index.html");
+    exit();
+}else{
     
 }
