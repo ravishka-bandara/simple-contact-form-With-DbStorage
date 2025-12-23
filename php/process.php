@@ -14,5 +14,26 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $phone = trim($_POST['phone']);
     $message = trim($_POST['message']);
 
-    
+    //basic validation
+    $errors = [];
+
+    if(empty($name)){
+        $errors[] ="Name is required you dumb";
+    }
+
+    if(empty($email)) || !filter_var($email, FILTER_VALIDATE_EMAIL)){
+        $errors[] = "Valid email is required";
+    }
+
+    if(empty($message)){
+        $errors[] = "Message is required";
+    }
+
+    //if no errors , insert in to database
+    if(empty($errors)){
+        try{
+            //made sql statement
+            
+        }
+    }
 }
