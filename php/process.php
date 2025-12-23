@@ -33,6 +33,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     if(empty($errors)){
         try{
             //made sql statement
+            $sql = "INSERT INTO contacts (name, email, phone, message)
+            VALUES (:name, :email, :phone, :message)";
+
+            $stmt = $pdo->prepare($sql);
+
             
         }
     }
