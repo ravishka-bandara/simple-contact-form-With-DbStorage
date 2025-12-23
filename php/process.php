@@ -44,7 +44,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
             $stmt->bindParam(':phone',$phone);
             $stmt->bindParam(':message',$message);
 
-            
+            //execute the statement
+            if($stmt->execute()){
+                $_SESSION['success'] = "contact saved successfully";
+                $_SESSION['contact_id'] = $pdo->lastInsertId();
+            }else{
+                $_SESSION['error'] = "Error saving contact. please try again.";
+            }
+
+        }catch(PDOException $e){
+            $_SESSION['error'] = "Data base error: ".$e->getMessage();
         }
+    }else{
+        $_SESSION['error'] = $errors;
     }
+
+    
 }
