@@ -63,5 +63,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     header("location: index.html");
     exit();
 }else{
-    
+    // if try access directly redirect to form
+    header("location: index.html");
+    exit();
 }
+?>
