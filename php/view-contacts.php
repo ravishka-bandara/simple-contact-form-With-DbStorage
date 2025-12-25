@@ -1,6 +1,6 @@
 <?php
 //database connection
-require_once 'config/database.php';
+require_once __DIR__ . '/../config/database.php';
 
 //start the session :if needed
  session_start();
