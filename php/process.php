@@ -9,10 +9,10 @@ session_start();
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
     //get form data sanitize means cleaning and securting like wash vege befo coock
-    $name = trim($_POST['name']);
-    $email = trim($_POST['email']);
-    $phone = trim($_POST['phone']);
-    $message = trim($_POST['message']);
+    $name = trim($_POST['name']??'');
+    $email = trim($_POST['email']??'');
+    $phone = trim($_POST['phone']??'');
+    $message = trim($_POST['message']??'');
 
     //basic validation
     $errors = [];
@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         $errors[] ="Name is required you dumb";
     }
 
-    if(empty($email)) || !filter_var($email, FILTER_VALIDATE_EMAIL)){
+    if(empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)){
         $errors[] = "Valid email is required";
     }
 
@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
             $_SESSION['error'] = "Data base error: ".$e->getMessage();
         }
     }else{
-        $_SESSION['error'] = $errors;
+        $_SESSION['errors'] = $errors;
     }
 
     //redirect back to form
