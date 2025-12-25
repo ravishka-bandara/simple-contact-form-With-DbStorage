@@ -83,7 +83,7 @@ require_once 'config/database.php';
             <i class="fas fa-arrow-left"></i>Back to contact form
         </a>
 
-        <?php if(count($contacts)>0); ?>
+        <?php if(count($contacts)>0): ?>
             <table class="contacts-table">
                 <thead>
                     <tr>
@@ -114,10 +114,15 @@ require_once 'config/database.php';
                 <p><i class="fas fa-database"></i>Total contacts: <?php echo count($contacts); ?></p>
             </div>
 
-        
+
+        <?php else: ?>
+            <div class="empty-state">
+                <i class="fas fa-inbox"></i>
+                <h3>No contacts yet</h3>
+                <p>Submit your first contacts through the form idiot!!</p>
+            </div>
+        <?php endif; ?>
+        </div>
     </div>
-
-
-    
 </body>
 </html>
