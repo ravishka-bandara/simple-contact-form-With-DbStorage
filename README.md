@@ -4,7 +4,7 @@
 
 ## **ContactFlow Project Roadmap**
 
-### **✅ Completed Features**
+### ** Completed Features**
 [ ] Database design and MySQL setup  
 [X] HTML contact form with CSS styling  
 [X] JavaScript form validation  
@@ -14,27 +14,27 @@
 [ ] View all contacts page  
 [ ] Input sanitization and security  
 
-### **🚧 Currently Working On**
+### ** Currently Working On**
 [ ] Form validation improvements  
 [ ] Database security implementation  
 [ ] Responsive design optimization  
 [ ] Error handling system  
 
-### **📋 Immediate Next Steps**
+### ** Immediate Next Steps**
 [ ] Edit contact functionality  
 [ ] Delete contact with confirmation  
 [ ] Search contacts feature  
 [ ] Contact export to CSV  
 [ ] Pagination for contact list  
 
-### **🎯 Phase 2 Enhancements**
+### ** Phase 2 Enhancements**
 [ ] User authentication system  
 [ ] Contact categories/tags  
 [ ] Contact import from CSV  
 [ ] Duplicate contact detection  
 [ ] Email notification system  
 
-### **🚀 Advanced Features (Future)**
+### ** Advanced Features (Future)**
 [ ] Contact photo uploads  
 [ ] QR code contact sharing  
 [ ] API for mobile app integration  
@@ -56,12 +56,12 @@
 
 ### ** Progress Overview**
 
-**Progress:** [4]%  
-**Local Hosting:** WAMP Server  
+**Progress:** [45]%  
+**Local Hosting:** XAMP Server  
 **Database:** MySQL via phpMyAdmin  
 **Live Demo:** (https://ravishka-bandara.github.io/simple-contact-form-With-DbStorage/)     ****** hosting ONLY front-end in gh-pages
 
 ---
 
-**Last Updated:** 2025-12-23  
+**Last Updated:** 2025-12-25  
 **Project Type:** Full-stack PHP/MySQL application
