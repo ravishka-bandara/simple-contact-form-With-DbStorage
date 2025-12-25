@@ -110,7 +110,11 @@ require_once 'config/database.php';
                 </tbody>
             </table>
 
-            
+            <div class="stats" style="margin-top: 20px; color:#f0f">
+                <p><i class="fas fa-database"></i>Total contacts: <?php echo count($contacts); ?></p>
+            </div>
+
+        
     </div>
 
 
