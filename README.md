@@ -59,7 +59,7 @@
 **Progress:** [45]%  
 **Local Hosting:** XAMP Server  
 **Database:** MySQL via phpMyAdmin  
-**Live Demo:** (https://ravishka-bandara.github.io/simple-contact-form-With-DbStorage/)     ****** hosting ONLY front-end in gh-pages
+**Live Demo:** (https://contact-form.wuaze.com/) ****** hosting on infinity free with backend**
 
 ---
 
