@@ -78,6 +78,41 @@ require_once 'config/database.php';
         </header>
     </div>
 
+    <div class="contacts-container">
+        <a href="../index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i>Back to contact form
+        </a>
+
+        <?php if(count($contacts)>0); ?>
+            <table class="contacts-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Message</th>
+                        <th>Data</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <?php foreach ($contacts as $contact): ?>
+                        <tr>
+                            <td><?php echo $contact['id']; ?></td>
+                            <td><?php echo htmlspecialchars($contact['name']); ?></td>
+                            <td><?php echo htmlspecialchars($contact['email']); ?></td>
+                            <td><?php echo htmlspecialchars($contact['phone']); ?></td>
+                            <td><?php echo htmlspecialchars($contact['message']); ?></td>
+                            <td><?php echo date('M d, Y', strtotime($contact['created_at'])); ?></td>
+                        </tr>
+                        <?php endforeach; ?>
+                </tbody>
+            </table>
+
+            
+    </div>
+
 
     
 </body>
