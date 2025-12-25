@@ -71,6 +71,14 @@ require_once 'config/database.php';
     </style>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-list"></i>Saved Contacts</h1>
+            <p class="subtitle">Data retrived from MySQL Database...</p>
+        </header>
+    </div>
+
+
     
 </body>
 </html>
