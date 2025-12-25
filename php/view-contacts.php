@@ -17,7 +17,58 @@ require_once 'config/database.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>View contacts | PHP project 01</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .contacts-container{
+            padding: 40px;
+        }
+
+        .back-btn{
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: #6a11cb;
+            font-weight: 600;
+        }
+
+        .back-btn i{
+            margin-right: 8px;
+        }
+
+        .contacts-table{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .contacts-table th{
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .contacts-table td{
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .contacts-table tr:hover{
+            background-color: #f0f;
+        }
+
+        .empty-state{
+            text-align: center;
+            padding: 50px;
+            color: #ddd;
+        }
+    </style>
 </head>
 <body>
     
