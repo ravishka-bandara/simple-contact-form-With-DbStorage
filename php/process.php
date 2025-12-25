@@ -1,6 +1,6 @@
 <?php
 //include db connection
-require_once 'config/database.php';
+require_once __DIR__ . '/../config/database.php';
 
 //start the seccion (for store success error message)
 session_start();
