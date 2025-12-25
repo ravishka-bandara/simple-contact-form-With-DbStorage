@@ -1,6 +1,6 @@
 <?php
 //include db connection
-require_once __DIR__ . '/../config/database.php';
+require_once 'config/database.php';
 
 //start the seccion (for store success error message)
 session_start();
@@ -60,11 +60,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     }
 
     //redirect back to form
-    header("location: index.html");
+    header("location: index.php");
     exit();
 }else{
     // if try access directly redirect to form
-    header("location: index.html");
+    header("location: index.php");
     exit();
 }
 ?>
