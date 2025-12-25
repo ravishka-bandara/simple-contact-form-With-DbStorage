@@ -12,7 +12,9 @@ try{
 
     //set error mode
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo " databse connected successfully"; // need remove after testing
+
+   // echo " databse connected successfully";  need remove after testing
+   
 } catch(PDOException $e){
     die("connection failed: " .$e->getMessage());
 }

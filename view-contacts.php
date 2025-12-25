@@ -18,7 +18,7 @@ require_once 'config/database.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View contacts | PHP project 01</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
@@ -78,7 +78,51 @@ require_once 'config/database.php';
         </header>
     </div>
 
+    <div class="contacts-container">
+        <a href="index.php" class="back-btn">
+            <i class="fas fa-arrow-left"></i>Back to contact form
+        </a>
 
-    
+        <?php if(count($contacts)>0): ?>
+            <table class="contacts-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Message</th>
+                        <th>Data</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <?php foreach ($contacts as $contact): ?>
+                        <tr>
+                            <td><?php echo $contact['id']; ?></td>
+                            <td><?php echo htmlspecialchars($contact['name']); ?></td>
+                            <td><?php echo htmlspecialchars($contact['email']); ?></td>
+                            <td><?php echo htmlspecialchars($contact['phone']); ?></td>
+                            <td><?php echo htmlspecialchars($contact['message']); ?></td>
+                            <td><?php echo date('M d, Y', strtotime($contact['created_at'])); ?></td>
+                        </tr>
+                        <?php endforeach; ?>
+                </tbody>
+            </table>
+
+            <div class="stats" style="margin-top: 20px; color:#f0f">
+                <p><i class="fas fa-database"></i>Total contacts: <?php echo count($contacts); ?></p>
+            </div>
+
+
+        <?php else: ?>
+            <div class="empty-state">
+                <i class="fas fa-inbox"></i>
+                <h3>No contacts yet</h3>
+                <p>Submit your first contacts through the form idiot!!</p>
+            </div>
+        <?php endif; ?>
+        </div>
+    </div>
 </body>
 </html>

@@ -17,7 +17,7 @@
         </header>
 
         <div class="form-container">
-            <form id="contactForm" action="" method="post">     <!--in there action put path of php -->
+            <form id="contactForm" action="process.php" method="post">     <!-- path of process.php -->
                 <div class="form-group">
                     <label for="name"><i class="fas fa-user"></i> Full name</label>
                     <input type="text" id="name" name="name" required placeholder="Enter your name">
@@ -52,7 +52,7 @@
 
             <div class="form-links">
                 <p>
-                    <a href="" class="link-btn">    <!-- put here php location -->
+                    <a href="view-contacts.php" class="link-btn">    <!-- put here php location -->
                         <i class="fas fa-eye"></i> View all contacts
                     </a>
                 </p>
