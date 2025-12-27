@@ -72,8 +72,15 @@
                 <span class="tech-icon mysql"><i class="fas fa-database"></i> MySql </span>
             </div>
         </div>
+
+        <footer>
+    <div id="copyright">
+        <p>&copy; 2025 Ravishka Bandara. All Rights Reserved.</p>
+    </div>
+</footer>
     </div>
 
+    
 
 <script src="script.js"></script>   
 

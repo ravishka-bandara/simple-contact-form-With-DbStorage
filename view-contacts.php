@@ -522,6 +522,24 @@ require_once 'config/database.php';
                 display: block;
             }
         }
+
+         footer {
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(10px);
+        color: white;
+        text-align: center;
+        padding: 1.5rem;
+        margin-top: 3rem;
+        font-family: 'Segoe UI', system-ui, sans-serif;
+        border-radius: 25px;
+    }
+    
+    #copyright p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.8);
+        letter-spacing: 0.3px;
+    }
     </style>
 </head>
 <body>
@@ -619,6 +637,13 @@ require_once 'config/database.php';
                 <?php endif; ?>
             </div>
         </main>
+
+        <footer>
+            <div id="copyright">
+            <p>&copy; 2025 Ravishka Bandara. All Rights Reserved.</p>
+            </div>
+        </footer>
+
     </div>
     
     <script>

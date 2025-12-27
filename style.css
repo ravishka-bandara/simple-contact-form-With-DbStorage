@@ -229,6 +229,22 @@ header .subtitle{
     color: #ffffff;
 }
 
+ footer {
+        background: rgba(255, 255, 255, 0.13);
+        backdrop-filter: blur(10px);
+        color: white;
+        text-align: center;
+        padding: 1.5rem;
+        margin-top: 3rem;
+        font-family: 'Segoe UI', system-ui, sans-serif;
+    }
+    
+    #copyright p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.8);
+        letter-spacing: 0.3px;
+    }
 
 
 /*======== make responsive for samll screens==*/
