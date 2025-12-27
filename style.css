@@ -58,20 +58,20 @@ header .subtitle{
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
-    color: #3d3838;
+    color: #ffffff;
     font-size: 1.1rem;
 }
 
 .form-group label i{
     margin-right: 10px;
-    color: #9215cc;
+    color: #ffffff;
 }
 
 .form-group input,
 .form-group textarea{
     width: 100%;
     padding: 15px;
-    border: 2px solid #e00e;
+    border: 2px solid rgba(0, 0, 0, 0.933);
     border-radius: 20px;
     font-size: 1rem;
     transition: all 0.3s;
@@ -108,26 +108,28 @@ header .subtitle{
 }
 
 .btn-submit{
-    background: linear-gradient(135deg, #00ff26 0%, #0008ff 100%);
+    background: rgb(37, 140, 32);
     color: white;
 }
 
 .btn-reset{
-    background: #777879;
+    background: #b83838;
     color: #ffffff;
     border: 2px solid #e0e0e0;
 }
 
 .btn-submit:hover{
     transform: translateY(-3px);
-    box-shadow: 0 7px 15px rgba(106, 17, 203, 0.3);
-    background: rgb(0, 140, 255);
-    color: white;
+    box-shadow: 0 7px 15px rgba(255, 255, 255, 0.3);
+    background: rgb(170, 255, 183);
+    color: rgb(0, 0, 0);
 }
 
 .btn-reset:hover{
     background: #ff0000;
-    color: rgb(255, 255, 255);
+    transform: translateY(-3px);
+    box-shadow: 0 7px 15px rgba(255, 255, 255, 0.3);
+    color: rgb(0, 0, 0);
 }
 
 /* == links*/
