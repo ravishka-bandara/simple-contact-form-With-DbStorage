@@ -31,7 +31,7 @@ require_once 'config/database.php';
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-image: url(assets/images/background.png);
+            background-image: url(assets/images/view-contactsbg.png);
             min-height: 100vh;
             border-radius: 25px;
         }
@@ -320,7 +320,7 @@ require_once 'config/database.php';
         /* ======== Mobile Responsive Styles ======== */
         @media (max-width: 768px) {
             body {
-                background-image: url(assets/images/background.png);
+                background-image: url(assets/images/view-contactsbg.png);
                 background-size: cover;
                 background-attachment: scroll;
             }
