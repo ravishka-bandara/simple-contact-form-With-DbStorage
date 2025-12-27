@@ -97,23 +97,26 @@ require_once 'config/database.php';
             margin-bottom: 30px;
             text-decoration: none;
             color: white;
-            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            background: linear-gradient(135deg, #0bbaf5ff 0%, #1f9e18ff 100%);
             border-radius: 50px;
             font-weight: 600;
             font-size: 1.1rem;
             padding: 15px 30px;
             transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(106, 17, 203, 0.3);
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
         }
         
         .back-btn:hover {
             transform: translateY(-3px);
+            background: linear-gradient(135deg, #1c80dfff 0%, #cb2e2eff 100%);
             box-shadow: 0 8px 20px rgba(106, 17, 203, 0.4);
+            color: black;
         }
         
         .back-btn i{
             margin-right: 10px;
             font-size: 1.2em;
+            color: white;
         }
         
         /* Table Styles */
@@ -131,26 +134,28 @@ require_once 'config/database.php';
         }
         
         .contacts-table th{
-            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-            color: white;
+            background: rgba(2, 33, 43, 1); /* lightblue */
+            backdrop-filter: blur(15px);
+            color: #ffffffff;
             padding: 20px 15px;
             text-align: left;
             font-weight: 600;
             font-size: 1.1em;
+            
         }
         
         .contacts-table td{
             padding: 18px 15px;
             border-bottom: 1px solid #eee;
-            color: #333;
+            color: #ffffffff;
         }
         
         .contacts-table tr:nth-child(even){
-            background-color: #f9f9f9;
+            background-color: #434343ff;
         }
         
         .contacts-table tr:hover{
-            background-color: #f0f7ff;
+            background-color: #1a1e22ff;
             transform: scale(1.002);
             transition: all 0.2s ease;
         }
@@ -165,14 +170,14 @@ require_once 'config/database.php';
         .stats {
             margin-top: 30px;
             padding: 20px;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            background: linear-gradient(135deg, #0d0852ff 0%, #370f43ff 100%);
             border-radius: 10px;
             text-align: center;
-            border-left: 5px solid #6a11cb;
+            border-left: 5px solid #504d4dff;
         }
         
         .stats p {
-            color: #333;
+            color: #929292ff;
             font-size: 1.2em;
             font-weight: 600;
             display: flex;
@@ -182,7 +187,7 @@ require_once 'config/database.php';
         }
         
         .stats i {
-            color: #6a11cb;
+            color: #b4b4b4ff;
             font-size: 1.5em;
         }
         
