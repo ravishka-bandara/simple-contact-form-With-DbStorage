@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, rgba(255, 0, 0, 0.933) 0%, #059905 100%);
+    background-image: url(assets/images/background.png);
     min-height: 100vh;
     padding: 20px;
     display: flex;
@@ -17,7 +17,7 @@ body{
 .container{
     width: 100%;
     max-width: 800px;
-    background: white;
+    background: rgba(255, 255, 255, 0.531);
     border-radius: 20px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -25,7 +25,7 @@ body{
 
 /* headerr section*/
 header{
-    background: linear-gradient(135deg, #1000a0 0%, #0bfbeb 100%);
+    background: linear-gradient(135deg, #1000a000 0%, #0bfbeb 100%);
     color: white;
     padding: 30px;
     text-align: center;
