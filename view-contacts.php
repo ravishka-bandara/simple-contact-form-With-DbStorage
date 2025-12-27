@@ -44,11 +44,12 @@ require_once 'config/database.php';
         
         /* Header Styles */
         .page-header {
-            background: #cf7a7641;
+            background: rgba(20, 20, 30, 0.75);
+            backdrop-filter: blur(16px);
             padding: 40px 30px;
             text-align: center;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            border-bottom: 5px solid #6a11cb;
+            border-bottom: 5px solid #ffffffff;
             border-radius: 25px;
         }
         
@@ -64,7 +65,7 @@ require_once 'config/database.php';
         }
         
         .page-header .subtitle {
-            color: #ffffffff;
+            color: #cbc9c9ff;
             font-size: 1.2em;
             margin-top: 10px;
         }
@@ -73,7 +74,8 @@ require_once 'config/database.php';
         .page-content {
             flex: 1;
             padding: 40px 20px;
-            background: #f8f9fa;
+            background: rgba(255, 255, 255, 0);
+            backdrop-filter: blur(16px);
             border-radius: 25px;
         }
         
@@ -84,6 +86,8 @@ require_once 'config/database.php';
             border-radius: 20px;
             padding: 40px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            background: rgba(20, 20, 30, 0.265);
+    backdrop-filter: blur(16px);
         }
         
         /* Back Button */
