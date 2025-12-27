@@ -221,14 +221,14 @@ header .subtitle{
 
 /*======== make responsive for samll screens==*/
 
-@media (max-width: 600px){
+@media (max-width: 768px){
     .container{
-        margin: 50px;
+        margin: 5%;
         border-radius: 25px;
     }
 
     .form-container{
-        padding: 25px;
+        padding: 20px;
     }
 
     .form-actions{
