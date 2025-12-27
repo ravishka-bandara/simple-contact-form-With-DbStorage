@@ -31,7 +31,7 @@ require_once 'config/database.php';
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            background-image: url(assets/images/background.png);
             min-height: 100vh;
             border-radius: 25px;
         }
