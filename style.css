@@ -143,8 +143,9 @@ header .subtitle{
 .link-btn{
     display: inline-block;
     padding: 12px 30px;
-    background: #0026ff;
-    color: white;
+    background: rgba(34, 34, 70, 0.5);
+    backdrop-filter: blur(16px);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     border-radius: 20px;
     font-weight: 600;
@@ -152,8 +153,8 @@ header .subtitle{
 }
 
 .link-btn:hover{
-    background: #61eaff;
-    color: black;
+    background: #dbd0ff;
+    color: rgb(0, 0, 0);
     transform: translateY(-2px);
 }
 
@@ -163,7 +164,7 @@ header .subtitle{
 
 .note{
     margin-top: 15px;
-    color: #666;
+    color: #bbb9b9;
     font-style: italic;
 }
 
@@ -199,28 +200,33 @@ header .subtitle{
 
 
 .tech-icon.html{
-    background: #00ff26;
-    color: #0026ff;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    color: #ffffff;
 }
 
 .tech-icon.css{
-    background: #00ff26;
-    color: #0008ff;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    color: #ffffff;
 }
 
 .tech-icon.js{
-    background: #00ff26;
-    color: #0008ff;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    color: #ffffff;
 }
 
 .tech-icon.php{
-    background: #00ff26;
-    color: #0008ff;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    color: #ffffff;
 }
 
 .tech-icon.mysql{
-    background: #00ff26;
-    color: #0008ff;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    color: #ffffff;
 }
 
 
