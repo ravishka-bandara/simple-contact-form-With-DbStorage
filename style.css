@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, rgba(255, 0, 0, 0.933) 0%, #059905 100%);
+    background-image: url(assets/images/background.png);
     min-height: 100vh;
     padding: 20px;
     display: flex;
@@ -17,22 +17,25 @@ body{
 .container{
     width: 100%;
     max-width: 800px;
-    background: white;
-    border-radius: 20px;
+    background: rgba(20, 20, 30, 0.265);
+    backdrop-filter: blur(16px);
+    border-radius: 45px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
 
 /* headerr section*/
 header{
-    background: linear-gradient(135deg, #1000a0 0%, #0bfbeb 100%);
+    background: rgba(20, 20, 30, 0.5);
+    backdrop-filter: blur(16px);
     color: white;
     padding: 30px;
     text-align: center;
+    border-radius: 45px;
 }
 
 header h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
@@ -55,20 +58,20 @@ header .subtitle{
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
-    color: #3d3838;
+    color: #ffffff;
     font-size: 1.1rem;
 }
 
 .form-group label i{
     margin-right: 10px;
-    color: #9215cc;
+    color: #ffffff;
 }
 
 .form-group input,
 .form-group textarea{
     width: 100%;
     padding: 15px;
-    border: 2px solid #e00e;
+    border: 2px solid rgba(0, 0, 0, 0.933);
     border-radius: 20px;
     font-size: 1rem;
     transition: all 0.3s;
@@ -105,26 +108,28 @@ header .subtitle{
 }
 
 .btn-submit{
-    background: linear-gradient(135deg, #00ff26 0%, #0008ff 100%);
+    background: rgb(37, 140, 32);
     color: white;
 }
 
 .btn-reset{
-    background: #777879;
+    background: #b83838;
     color: #ffffff;
     border: 2px solid #e0e0e0;
 }
 
 .btn-submit:hover{
     transform: translateY(-3px);
-    box-shadow: 0 7px 15px rgba(106, 17, 203, 0.3);
-    background: rgb(0, 140, 255);
-    color: white;
+    box-shadow: 0 7px 15px rgba(255, 255, 255, 0.3);
+    background: rgb(170, 255, 183);
+    color: rgb(0, 0, 0);
 }
 
 .btn-reset:hover{
     background: #ff0000;
-    color: rgb(255, 255, 255);
+    transform: translateY(-3px);
+    box-shadow: 0 7px 15px rgba(255, 255, 255, 0.3);
+    color: rgb(0, 0, 0);
 }
 
 /* == links*/
@@ -138,8 +143,9 @@ header .subtitle{
 .link-btn{
     display: inline-block;
     padding: 12px 30px;
-    background: #0026ff;
-    color: white;
+    background: rgba(34, 34, 70, 0.5);
+    backdrop-filter: blur(16px);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     border-radius: 20px;
     font-weight: 600;
@@ -147,8 +153,8 @@ header .subtitle{
 }
 
 .link-btn:hover{
-    background: #61eaff;
-    color: black;
+    background: #dbd0ff;
+    color: rgb(0, 0, 0);
     transform: translateY(-2px);
 }
 
@@ -158,13 +164,14 @@ header .subtitle{
 
 .note{
     margin-top: 15px;
-    color: #666;
+    color: #bbb9b9;
     font-style: italic;
 }
 
 /*===tech stach section==== */
 .tech-stack{
-    background: #f8f9fa;
+    background: rgba(20, 20, 30, 0.265);
+    backdrop-filter: blur(16px);
     padding: 25px;
     border-top: 2px solid #eee;
 }
@@ -172,7 +179,7 @@ header .subtitle{
 .tech-stack h3{
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
+    color: #ffffff;
 }
 
 .tech-icons{
@@ -193,42 +200,63 @@ header .subtitle{
 
 
 .tech-icon.html{
-    background: #00ff26;
-    color: #0026ff;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    color: #ffffff;
 }
 
 .tech-icon.css{
-    background: #00ff26;
-    color: #0008ff;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    color: #ffffff;
 }
 
 .tech-icon.js{
-    background: #00ff26;
-    color: #0008ff;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    color: #ffffff;
 }
 
 .tech-icon.php{
-    background: #00ff26;
-    color: #0008ff;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    color: #ffffff;
 }
 
 .tech-icon.mysql{
-    background: #00ff26;
-    color: #0008ff;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    color: #ffffff;
 }
 
+ footer {
+        background: rgba(255, 255, 255, 0.13);
+        backdrop-filter: blur(10px);
+        color: white;
+        text-align: center;
+        padding: 1.5rem;
+        margin-top: 3rem;
+        font-family: 'Segoe UI', system-ui, sans-serif;
+    }
+    
+    #copyright p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.8);
+        letter-spacing: 0.3px;
+    }
 
 
 /*======== make responsive for samll screens==*/
 
-@media (max-width: 600px){
+@media (max-width: 768px){
     .container{
-        margin: 50px;
+        margin: 5%;
         border-radius: 25px;
     }
 
     .form-container{
-        padding: 25px;
+        padding: 20px;
     }
 
     .form-actions{
