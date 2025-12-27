@@ -221,15 +221,18 @@ require_once 'config/database.php';
         /* Mobile Cards View (Hidden on Desktop) */
         .mobile-contacts {
             display: none;
+            background: rgba(20, 20, 30, 0.265);
+            backdrop-filter: blur(16px);
         }
         
         .contact-card {
-            background: white;
+            background: rgba(20, 20, 30, 0.265);
+            backdrop-filter: blur(16px);
             border-radius: 15px;
             padding: 25px;
             margin-bottom: 20px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-            border-left: 5px solid #6a11cb;
+            border-left: 5px solid #000000ff;
             transition: transform 0.3s ease;
         }
         
@@ -294,23 +297,24 @@ require_once 'config/database.php';
         /* Message field specific styling */
         .message-field {
             flex-direction: column;
-            background: #f8f9fa;
+            background: #737475ff;
             padding: 15px;
             border-radius: 8px;
             margin-top: 10px;
-            border-left: 4px solid #6a11cb;
+            border-left: 4px solid #ffffffff;
         }
         
         .message-field .field-label {
             min-width: 100%;
             margin-bottom: 10px;
-            color: #6a11cb;
+            color: #ffffffff;
             font-size: 1em;
         }
         
         .message-field .field-value {
             font-style: italic;
             line-height: 1.6;
+            color: white;
         }
         
         /* ======== Mobile Responsive Styles ======== */
