@@ -327,6 +327,7 @@ require_once 'config/database.php';
             
             .main-container {
                 background: rgba(20, 20, 30, 0.8);
+                border-radius: 25px;
             }
             
             .page-header {
@@ -334,6 +335,7 @@ require_once 'config/database.php';
                 border-radius: 0;
                 background: rgba(20, 20, 30, 0.75);
                 backdrop-filter: blur(16px);
+                border-radius: 25px;
             }
             
             .page-header h1 {
