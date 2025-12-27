@@ -218,26 +218,26 @@ require_once 'config/database.php';
             margin-bottom: 30px;
         }
         
-        /* Mobile Cards View (Hidden on Desktop) */
+                /* Mobile Cards View (Hidden on Desktop) */
         .mobile-contacts {
             display: none;
-            background: rgba(20, 20, 30, 0.265);
-            backdrop-filter: blur(16px);
         }
         
         .contact-card {
-            background: rgba(20, 20, 30, 0.265);
+            background: rgba(20, 20, 30, 0.6);
             backdrop-filter: blur(16px);
             border-radius: 15px;
             padding: 25px;
             margin-bottom: 20px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-            border-left: 5px solid #000000ff;
-            transition: transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            border-left: 5px solid #0bbaf5ff;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
         
         .contact-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
         }
         
         .contact-card-header {
@@ -246,11 +246,11 @@ require_once 'config/database.php';
             align-items: center;
             margin-bottom: 20px;
             padding-bottom: 15px;
-            border-bottom: 2px solid #f0f0f0;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
         }
         
         .contact-id {
-            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            background: linear-gradient(135deg, #0bbaf5ff 0%, #1f9e18ff 100%);
             color: white;
             padding: 8px 15px;
             border-radius: 25px;
@@ -259,7 +259,7 @@ require_once 'config/database.php';
         }
         
         .contact-date {
-            color: #666;
+            color: #cbc9c9ff;
             font-size: 0.9em;
             font-weight: 600;
         }
@@ -274,72 +274,91 @@ require_once 'config/database.php';
         .field-label {
             font-weight: 600;
             min-width: 100px;
-            color: #555;
+            color: #0bbaf5ff;
             font-size: 0.95em;
         }
         
         .field-value {
             flex: 1;
-            color: #333;
+            color: #ffffff;
             word-break: break-word;
         }
         
         .field-value.email {
-            color: #2575fc;
+            color: #1f9e18ff;
             font-weight: 500;
         }
         
         .field-value.phone {
-            color: #28a745;
+            color: #ffa726;
             font-weight: 500;
         }
         
         /* Message field specific styling */
         .message-field {
             flex-direction: column;
-            background: #737475ff;
+            background: rgba(40, 40, 50, 0.6);
             padding: 15px;
             border-radius: 8px;
             margin-top: 10px;
-            border-left: 4px solid #ffffffff;
+            border-left: 4px solid #1f9e18ff;
         }
         
         .message-field .field-label {
             min-width: 100%;
             margin-bottom: 10px;
-            color: #ffffffff;
+            color: #ffffff;
             font-size: 1em;
         }
         
         .message-field .field-value {
             font-style: italic;
             line-height: 1.6;
-            color: white;
+            color: #ffffff;
         }
         
         /* ======== Mobile Responsive Styles ======== */
         @media (max-width: 768px) {
+            body {
+                background-image: url(assets/images/background.png);
+                background-size: cover;
+                background-attachment: scroll;
+            }
+            
+            .main-container {
+                background: rgba(20, 20, 30, 0.8);
+            }
+            
             .page-header {
                 padding: 30px 20px;
+                border-radius: 0;
+                background: rgba(20, 20, 30, 0.75);
+                backdrop-filter: blur(16px);
             }
             
             .page-header h1 {
                 font-size: 2em;
+                color: #ffffffff;
             }
             
             .page-header .subtitle {
                 font-size: 1em;
+                color: #cbc9c9ff;
             }
             
             .page-content {
                 padding: 20px 15px;
-                background: #f8f9fa;
+                background: transparent;
             }
             
             .contacts-container {
                 padding: 25px;
                 border-radius: 15px;
                 margin: 0;
+                background: rgba(20, 20, 30, 0.265);
+                backdrop-filter: blur(16px);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+                border: 1px solid rgba(255, 255, 255, 0.1);
             }
             
             .back-btn {
@@ -348,6 +367,13 @@ require_once 'config/database.php';
                 padding: 18px;
                 margin-bottom: 25px;
                 font-size: 1.1em;
+                background: linear-gradient(135deg, #0bbaf5ff 0%, #1f9e18ff 100%);
+                color: white;
+            }
+            
+            .back-btn:hover {
+                background: linear-gradient(135deg, #1c80dfff 0%, #cb2e2eff 100%);
+                color: white;
             }
             
             /* Hide desktop table on mobile */
@@ -363,6 +389,8 @@ require_once 'config/database.php';
             .contact-card {
                 padding: 20px;
                 margin-bottom: 15px;
+                background: rgba(20, 20, 30, 0.6);
+                border-left: 5px solid #0bbaf5ff;
             }
             
             .contact-field {
@@ -374,38 +402,66 @@ require_once 'config/database.php';
                 min-width: 100%;
                 margin-bottom: 5px;
                 font-size: 0.9em;
-                color: #777;
+                color: #0bbaf5ff;
             }
             
             .field-value {
                 width: 100%;
                 font-size: 1em;
+                color: #ffffff;
+            }
+            
+            .field-value.email {
+                color: #1f9e18ff;
+            }
+            
+            .field-value.phone {
+                color: #ffa726;
+            }
+            
+            .message-field {
+                background: rgba(40, 40, 50, 0.6);
+                border-left: 4px solid #1f9e18ff;
             }
             
             .stats {
                 margin-top: 25px;
                 padding: 15px;
+                background: linear-gradient(135deg, rgba(13, 8, 82, 0.8) 0%, rgba(55, 15, 67, 0.8) 100%);
+                border-left: 5px solid #0bbaf5ff;
             }
             
             .stats p {
                 font-size: 1.1em;
+                color: #ffffff;
+            }
+            
+            .stats i {
+                color: #0bbaf5ff;
             }
             
             .empty-state {
                 padding: 40px 20px;
+                background: rgba(20, 20, 30, 0.5);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.1);
             }
             
             .empty-state i {
                 font-size: 3em;
+                color: #0bbaf5ff;
             }
             
             .empty-state h3 {
                 font-size: 1.5em;
+                color: #ffffff;
             }
             
             .empty-state p {
                 font-size: 1em;
                 margin-bottom: 25px;
+                color: #cbc9c9ff;
             }
             
             /* Add Contact button in empty state */
@@ -443,24 +499,16 @@ require_once 'config/database.php';
                 font-size: 0.8em;
             }
             
-            .empty-state {
-                padding: 30px 15px;
-            }
-        }
-        
-        /* Tablet Styles */
-        @media (min-width: 769px) and (max-width: 1024px) {
-            .contacts-container {
-                padding: 35px;
+            .field-label {
+                font-size: 0.85em;
             }
             
-            .contacts-table {
+            .field-value {
                 font-size: 0.95em;
             }
             
-            .contacts-table th,
-            .contacts-table td {
-                padding: 15px 12px;
+            .empty-state {
+                padding: 30px 15px;
             }
         }
         
@@ -472,13 +520,6 @@ require_once 'config/database.php';
             
             .table-responsive {
                 display: block;
-            }
-        }
-        
-        /* Desktop Large Screens */
-        @media (min-width: 1200px) {
-            .contacts-container {
-                padding: 50px;
             }
         }
     </style>
